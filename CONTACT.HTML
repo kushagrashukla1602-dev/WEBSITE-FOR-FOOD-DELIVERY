@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Kushagra’s Food</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Body & background */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #ffecd2, #fcb69f); /* nice warm gradient */
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Header styling */
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ff914d;
+      padding: 15px 30px;
+      flex-wrap: wrap;
+      color: white;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    nav a.active, nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Contact section card */
+    .contact-section {
+      background: rgba(255, 255, 255, 0.9);
+      margin-top: 40px;
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 90%;
+      max-width: 500px;
+    }
+
+    .contact-section h2 {
+      color: #ff7a1c;
+      margin-bottom: 15px;
+    }
+
+    .contact-section p {
+      font-size: 1.1em;
+      color: #555;
+      margin-bottom: 25px;
+    }
+
+    /* Center the list */
+    .contact-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      text-align: left;
+      display: inline-block;
+      font-size: 1.1em;
+    }
+
+    .contact-section li {
+      margin: 10px 0;
+      background: #fff8f0;
+      padding: 12px 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    /* Responsive for phones */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      .contact-section {
+        width: 95%;
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">🍴 Kushagra's Food</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="order.html">Order</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="payment.html">Payment</a>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you!</p>
+    <ul>
+      <li>📞 Phone: 9000990009</li>
+      <li>📧 Email: foodservice@gmail.com</li>
+      <li>🏠 Address: AYODHYA, Uttar Pradesh, India</li>
+    </ul>
+  </section>
+
+</body>
+</html>

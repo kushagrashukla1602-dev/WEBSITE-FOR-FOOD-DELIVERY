@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Now - Kushagra’s Food</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Basic form styling (optional enhancement) */
+    .order-section {
+      text-align: center;
+      padding: 30px;
+    }
+
+    form {
+      display: inline-block;
+      background: #fff8f0;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input, select {
+      width: 250px;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    .btn {
+      background-color: #ff914d;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #ff7a1c;
+    }
+
+    #confirmation {
+      display: none;
+      color: #2b8a3e;
+      font-weight: bold;
+      margin-top: 15px;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🍴 Kushagra's Food</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="order.html" class="active">Order</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="payment.html">Payment</a>
+    </nav>
+  </header>
+
+  <section class="order-section">
+    <h2>Place Your Order</h2>
+    <form id="orderForm">
+      <input type="text" placeholder="Full Name" required><br>
+      <input type="text" placeholder="Address" required><br>
+
+      <!-- Dropdown (arrow down box) for food items -->
+      <select required>
+        <option value="">Select Food Item</option>
+        <option value="Pizza">Pizza</option>
+        <option value="Burger">Burger</option>
+        <option value="Pasta">Pasta</option>
+        <option value="Indian Thali">Indian Thali</option>
+        <option value="Desserts">Desserts</option>
+        <option value="Cold Drinks">Cold Drinks</option>
+      </select><br>
+
+      <input type="number" placeholder="Quantity" min="1" required><br>
+
+      <button type="submit" class="btn">Submit Order</button>
+    </form>
+
+    <!-- Confirmation message -->
+    <p id="confirmation">✅ Your order has been successfully placed!</p>
+  </section>
+
+  <script>
+    const form = document.getElementById("orderForm");
+    const confirmation = document.getElementById("confirmation");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevents page reload
+      confirmation.style.display = "block"; // Show success message
+      form.reset(); // Clears the form
+    });
+  </script>
+</body>
+</html>

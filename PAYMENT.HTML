@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment - Kushagra’s Food</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Body & background */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #ffecd2, #fcb69f); /* warm gradient */
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Header styling */
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ff914d;
+      padding: 15px 30px;
+      flex-wrap: wrap;
+      color: white;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    nav a.active, nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Payment section card */
+    .payment-section {
+      background: rgba(255, 255, 255, 0.95);
+      margin-top: 40px;
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 90%;
+      max-width: 500px;
+    }
+
+    .payment-section h2 {
+      color: #ff7a1c;
+      margin-bottom: 15px;
+    }
+
+    .payment-section p {
+      font-size: 1.1em;
+      color: #555;
+      margin: 10px 0;
+    }
+
+    .payment-method {
+      background: #fff8f0;
+      padding: 12px 20px;
+      border-radius: 8px;
+      margin: 10px 0;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    /* Responsive for phones */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      .payment-section {
+        width: 95%;
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">🍴 Kushagra's Food</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="order.html">Order</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="payment.html" class="active">Payment</a>
+    </nav>
+  </header>
+
+  <section class="payment-section">
+    <h2>Payment Information</h2>
+    <p>💳 You can make your payment through the following options:</p>
+    
+    <div class="payment-method">UPI ID: <span style="color:#ff9800;">kushagrashukla360@fam</span></div>
+    <div class="payment-method">Credit/Debit Card (Visa, Mastercard, Rupay)</div>
+    <div class="payment-method">Net Banking</div>
+    <div class="payment-method">Cash on Delivery (COD)</div>
+
+    <p>📞 For any payment issues, contact us at: <strong>9000990009</strong></p>
+  </section>
+
+</body>
+</html>
